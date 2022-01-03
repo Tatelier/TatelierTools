@@ -9,8 +9,8 @@ function createWindow() {
 
     win.loadURL(url.format({
     pathname: path.join(__dirname, '../cli/index.html'),
-    protocol: 'file:',
-    slashes: true
+      protocol: 'file:',
+      slashes: true
     }));
     win.webContents.openDevTools();
 

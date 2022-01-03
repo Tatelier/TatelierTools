@@ -5,12 +5,14 @@ html
     body 
         #app
             .input.title
-                p タイトル
+                p {{ lang.title }}
                 input(type="text")
     script. 
         var vue = new Vue({
             el: "#app",
             data: {
-
+                lang: {
+                    title: "タイトル"
+                }
             }
         });
